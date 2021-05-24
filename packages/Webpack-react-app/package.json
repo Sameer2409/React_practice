@@ -4,6 +4,7 @@
   "description": "",
   "main": "webpack.config.js",
   "dependencies": {
+    "axios": "^0.21.1",
     "babel-core": "^7.0.0-bridge.0",
     "install": "^0.13.0",
     "npm": "^7.13.0",
@@ -27,9 +28,9 @@
     "webpack-dev-server": "^3.11.2"
   },
   "scripts": {
-    "serve": "webpack serve --mode development",
+    "serve": "rimraf dist && webpack serve --mode development",
     "build": "webpack --mode production",
-    "test": "echo testing react app"
+    "test": "echo testing react-app"
   },
   "author": "",
   "license": "ISC"
